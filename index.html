@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Седона</title>
 </head>
-
 <body>
 	<div class="container">
 		<header class="main-header">
 			<nav class="main-navigation">
-				<a class="logo"> <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
-				</a>
+				<a class="logo"> <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона"></a>
 				<ul class="site-navigation">
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
@@ -21,48 +18,55 @@
 			</nav>
 		</header>
 		<main>
-			<div class="welcome"> <img src.="img1.jpg" />
+			<div class="welcome">
+				<img src="img1.jpg" width="100" height="100" alt="lorem" />
 			</div>
 			<div class="intro">
-				<h1 class="pege-title">Седона — небольшой городок в Аризоне,
-              заслуживающий большего!
-   </h1>
+				<h1 class="page_title">Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</h1>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-				<div class="appointment"></div>
-				<div class="apointment-title" Заинтересовались?></div>
-				<p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<button>Поиск гостиницы в Седоне</button>
-				<form action="index.html" method="post">
-					<label for>Дата заезда
-						<input type="data" class="form-control" name="Календарь" />
-					</label>
-					<br>
-					<label for>Дата выезда
-						<input tupe="data" class="form-control" name="Календарь" />
-					</label>
-					<br>
-					<label for>Взрослые
-						<input name="child" class="form-control" type="number" /> Дети
-						<input name="man" class="form-control" type="number" />
-					</label>
-					<br>
-					<input type="submit" value="найти"> </div>
-			<footer class="main-footer">
-				<p>#VISITSEDONA</p>
-				<div class="social-list">
-					<ul>
-						<li><a class="social-button" href="#"><span class="visually-hidden"Загляните к нам в Twitter></span></a></li>
-						<li><a class="social-button-feacebook" href="#"><span class="visually-hidden"Наша страница на Feacebook></span></a></li>
-						<li>
-							<a class="social-button-youtube" href="#"> <span class="visually-hidden" Мы есть и на Youtube></span></a>
-						</li>
-					</ul>
-				</div>
-				<p class="footer-copyright">Website by
-					<href="button"> https://htmlacademy.ru/ </href>HTML Academy</p>
+				<div class="apointment">
+					<h2 class="apointment-title">Заинтересовались?</h2>
+					<p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="apointment-button">Поиск гостиницы в Седоне</button>
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<div class="input-line">
+							<label for="entry">Дата заезда<i class="icon-calendar"></i>
+								<input name="checkout" class="booking-calendar" id="entry" type="text" placeholder="4 июля 2014" />
+						</div>
+						<div class="input-line">
+							<label for="departure">Дата выезда<i class="icon-calendar"></i>
+							</label>
+							<input name="checkin" class="booking-calendar" id="departure" type="text" placeholder="24 апреля 2014">
+						</div>
+						<div class="input-line-adults">
+							<label for="man">Взрослые:</label>
+							<div class="booking-calendar-minus-plus">
+								<button class="btn-grey_icon-minus" type="button"></button>
+								<input name="adults" class="booking-calendar-select" id="man" type="text" value="2" />
+								<button class="btn-grey icon-plus" type="button"></button>
+							</div>
+						</div>
+						<label for="children">Дети:</label>
+						<div class="booking-calendar-minus-plus">
+							<button class="btn-grey icon-minus" type="button"></button>
+							<input name="children" class="booking-calendar-select" id="ch4" type="text" value="0" />
+							<button class="btn-grey icon-plus" type="button"></button>
+						</div>
+						<button class="form-btn-blue btn-blue" type="submit">Найти</button>
 		</main>
+		<footer class="main-footer">
+			<a class="hashtag" href="#">#visitsedona</a>
+			<div class="social">
+				<a class="social-btn icon-twitter" href="#">Зайти в наш Твиттер</a>
+				<a class="social-btn icon-facebook" href="#">Посетить наш Фейсбук</a>
+				<a class="social-btn icon-youtube" href="#"> Просмотреть наш Ютуб</a>
+			</div>
+			<div class="autor">website by
+				<a href="#"></a>
+			</div>
+			<href="button"> https://htmlacademy.ru/ </href>HTML Academy</p>
 		</footer>
-	</div>
+		</div>
 </body>
-
 </html>
