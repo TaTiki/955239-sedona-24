@@ -26,11 +26,48 @@
             </nav>
         </header>
         <main>
-            <h1 class="visually-hidden">Фильтр гостиниц</h1>
+       <section class="filter">
+         <div class="filter-options">
+              <form action="#" method="get" class="filter-category">
+                <p class="filter-title">Инфраструктура:</p>
+                <p><input type="checkbox" id="water" name="pool" value="pool" checked><label for="water">Бассейн</label></p>
+                <p><input type="checkbox" id="place" name="parking" value="parking"><label for="place">Парковка</label></p>
+                <p><input type="checkbox" id="network" name="wifi" value="wifi"><label for="network">Wi-fi</label></p>
+              </form>
+              <form action="#" method="get" class="filter-category">
+                <p class="filter-title">Тип жилья:</p>
+                <p><input type="checkbox" id="type-h" name="hotel" value="hotel" checked><label for="type-h">Гостиница</label></p>
+                <p><input type="checkbox" id="type-m" name="motel" value="motel" checked><label for="type-m">Мотель</label></p>
+                <p><input type="checkbox" id="type-a" name="apartments" value="apartments" checked><label for="type-a">Апартаменты</label></p>
+              </form>
+            </div>
+             <div class="filter-options">
+              <div class="filter-price">
+                <p class="filter-title">Стоимость в сутки (р):</p>
+                  <div class="filter-slider">
+                    <p class="price-start"> <label for="price-start">от</label> <input class="min-price" id="price-from" type="number" value="0"></p>
+                    <p class="price-end"> <label for="price-end">до</label> <input class="max-price" id="price-to" type="number" value="3000"></p>
+                    <a class="btn" href="#">Показать</a>
+                  </div>
+              </div>
+            </div>
+     </section>
+          <section class="results">
+                <div class="sorting">
+                  <p class="title">Найдено: <span class="pieces">3</span></p>
+                  <p class="sorting">Сортировка:</p>
+                  <ul class="sorting-list">
+                    <li><a class="sorting-prise" href="#">По цене</a></li>
+                    <li><a class="sorting-type" href="#">По типу</a></li>
+                    <li><a class="sorting-rating" href="#">По рейтингу</a></li>
+                  </ul>
+                </div>
+            </section>
+    <h1 class="visually-hidden">Фильтр гостиниц</h1>
             <section class="results">
                 <ul class="results-list">
                     <li class="results-item">
-                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/hotel1.jpg"></a>
+                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/svg-sedona/hotel1.jpg"></a>
                         <div class="results-item-content">
                             <h2 class="results-item-title"><a href="#">Amara Resort & Spa</a></h2>
                             <p>Гостиница</p>
@@ -45,10 +82,10 @@
                         </div>
                     </li>
                     <li class="results-item">
-                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/hotel1.jpg"></a>
+                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/svg-sedona/hotel2.jpg"></a>
                         <div class="results-item-content">
                             <h2 class="results-item-title"><a href="#">Desert Quail Inn</a></h2>
-                            <p>Моткель</p>
+                            <p>Мотель</p>
                             <p>от 3000 р.</p>
                             <a class="btn" href="#">Подробнее</a>
                             <a class="btn btn-dark" href="#">Забронировать</a>
@@ -60,7 +97,7 @@
                         </div>
                     </li>
                     <li class="results-item">
-                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/hotel1.jpg"></a>
+                        <a class="results-item-image" href="#"><img width="135" height="90" alt="hotel-picture" src="img/svg-sedona/hotel3.jpg"></a>
                         <div class="results-item-content">
                             <h2 class="results-item-title"><a href="#">Villas at Poco Diablo</a></h2>
                             <p>Апартаменты</p>
