@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href=" css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="container">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="logo"> <img src="img/logo-sedona.svg" width="368" height="153" alt="Логотип Седона"></a>
+                <a class="logo"> <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Седона"></a>
                 <ul class="site-navigation">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
@@ -21,7 +23,7 @@
         </header>
         <main>
             <div class="welcome">
-                <img src="img/background.jpg" width="1200" height="773" alt="Welcome to Sedona" />
+                <img src="img/intro-welcome.svg" width="460" height="350" alt="Welcome to Sedona" />
             </div>
             <div class="intro">
                 <h1 class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -39,23 +41,20 @@
                             <img width="800" height="256" alt="hotel-picture" src="img/city.jpg"></a>
                         </div>
                         <ul class="reason-sublist">
-                            <li class="reason-title">
+                            <li class="reason-item">
                                 <img width="75" height="72" alt="icon1" src="img/icon-1.svg" />
                                     <h2 class="reasons-title reasons-title-home">Жилье</h2>
                                     <p class="text">Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
-                                </div>
                             </li>
-                            <li class="reason-title">
+                            <li class="reason-item">
                                 <img width="75" height="72" alt="icon1" src="img/icon-3.svg" />
                                     <h2 class="reason-title reasons-title-food">Еда</h2>
                                     <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                                </div>
                             </li>
                             <li class="reason-item">
                                 <img width="75" height="72" alt="icon1" src="img/icon-2.svg">
                                     <h2 class="reason-title reasons-title-souvenir">Сувениры</h2>
                                     <p class="text">Не только китайского, но и местного производства!</p>
-                                </div>
                             </li>
                         </ul>
                         <div class="results-image">
@@ -109,17 +108,17 @@
                     <p class="input-line-half">
                         <label for="adult">Взрослые:</label>
                         <div class="booking-calendar-minus-plus">
-                            <button class="icon-minus" type="button"></button>
+                            <button class="icon-minus" type="button" label="Уменьшить"></button>
                             <input name="adults" class="booking-calendar-select" id="adult" type="number" value="2" />
-                            <button class="icon-plus" type="button"></button>
+                            <button class="icon-plus" type="button" label="Увеличить"></button>
                         </div>
                     </p>
                     <p class="input-line-half">
                         <label for="children">Дети:</label>
                         <div class="booking-calendar-minus-plus">
-                            <button class="icon-minus" type="button"></button>
+                            <button class="icon-minus" type="button" label="Уменьшить"></button>
                             <input name="children" class="booking-calendar-select" id="children" type="number" value="0" />
-                            <button class="icon-plus" type="button"></button>
+                            <button class="icon-plus" type="button" label="Увеличить"></button>
                         </div>
                     </p>
                     <button class="form-btn btn" type="submit">Найти</button>
