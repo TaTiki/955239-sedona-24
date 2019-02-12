@@ -12,7 +12,7 @@ body {
 .container {
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: auto;
     display: block;
     background-color: #ffffff;
 }
@@ -50,12 +50,14 @@ a{
     font-weight: bold;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover{
     color: #000000;
 }
+.site-navigation a:focus {
+    color: #81b3d2; 
+}
 .site-navigation a:active {
-    color: rgba(0, 0, 0, 0.5); 
+    color: #cccccc; 
 }
 
 .reason-list {
@@ -68,8 +70,8 @@ a{
 }
 
 
-}
-} 
+
+
 
 img{
     display: block;
@@ -82,23 +84,53 @@ img{
      font-weight: 700;
      line-height: 36px;
 }
-.apointment-title p {
-    color: #666666;
-    font-size: 14px;
-    font-weight: 400;
+.apointment-title  {
+    padding: 0;
+    color: #000000;
     line-height: 24px;
 }
 .apointment-button {
-    color: rgba(255, 255, 255, 0,3);
+    color: rgba(102, 102, 102, 0,3);
   
 }
-.form-btn btn {
+.form-btn {
     color: rgba(102, 102, 102, 0,3);
    
 }   
 
+.hashtag{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+
+}
+.social{
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 120px;
+    vertical-align: top;
+}
+.social-btn{
+    position: relative;
+    width: 46px;
+    height: 48px;
+    margin-right: 5px;
+    background-color:  #99cccc;
+}
+.social-btn:hover{
+    background-color:  #99cccc;
+}
+.social-btn:focus{
+    background-color: #669ec0;
+}
+.social-btn:active{
+    background-color: rgba(102, 153, 204, 0.3); 
+}
     /* hotels для себя отделила */
- 
+ .site-navigation.active{
+     color: #766257;
+ }
 
 .results-list {
     list-style: none;
@@ -106,7 +138,6 @@ img{
 
 
 .results-item-title a{
-    text-decoration: none;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -122,48 +153,51 @@ img{
 
 .results-item-content p {
     color: #000000;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
 }
  
-.btn,
-.btn-dark{
+.btn{
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+    background-color: #99cccc;
 }
 .btn:hover{
-    color: #99cccc;
+    background-color: #99cccc;
 }
 
 .btn:focus{
-    color: #6699cc;
+    background-color: #6699cc;
 }
 
 .btn:active{
-    color: rgba(102, 153, 204, 0.3);
+    background-color: rgba(102, 153, 204, 0.3);
+}
+.btn-dark{
+    color: #ffffff;
+    background-color:#766257;
 }
 .btn-dark:hover{
-    color: #666666;
+    background-color: #766257;
 }
 
 .btn-dark:focus{
-    color: #666633;
+    background-color: #604e44;
 }
 
 .btn-dark:active{
-    color: rgba(102, 102, 51, 0.3);
+    background-color: rgba(80, 62, 50, 0.3);
 }
 
 .rating-numbers{
+    text-decoration: none;
     color: #666666;
-    font-size: 14px;
-    font-weight: 400;
     line-height: 21px;
+    background-color: #f2f2f2;
+
 }
-.results-item-rating{
-    color: rgba(255, 255, 255, 0.3);
-}
+
+
+
