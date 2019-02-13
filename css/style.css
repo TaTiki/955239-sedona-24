@@ -11,9 +11,6 @@ body {
 }
 .container {
     text-align: center;
-    margin: 0;
-    padding: auto;
-    display: block;
     background-color: #ffffff;
 }
 a{
@@ -50,14 +47,14 @@ a{
     font-weight: bold;
 }
 
-.site-navigation a:hover{
+.site-navigation a:hover,
+.site-navigation a:focus{
     color: #000000;
 }
-.site-navigation a:focus {
-    color: #81b3d2; 
-}
+
+
 .site-navigation a:active {
-    color: #cccccc; 
+    color:  #81b3d2; 
 }
 
 .reason-list {
@@ -68,10 +65,6 @@ a{
     color: #000000;
     background-position: top left;
 }
-
-
-
-
 
 img{
     display: block;
@@ -95,22 +88,17 @@ img{
 }
 .form-btn {
     color: rgba(102, 102, 102, 0,3);
-   
+  
 }   
 
 .hashtag{
     font-size: 21px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 700;
     color: #000000;
 
 }
-.social{
-    display: inline-block;
-    box-sizing: border-box;
-    min-height: 120px;
-    vertical-align: top;
-}
+
 .social-btn{
     position: relative;
     width: 46px;
@@ -118,10 +106,11 @@ img{
     margin-right: 5px;
     background-color:  #99cccc;
 }
-.social-btn:hover{
+.social-btn:hover,
+.social-btn:focus{
     background-color:  #99cccc;
 }
-.social-btn:focus{
+{
     background-color: #669ec0;
 }
 .social-btn:active{
@@ -130,7 +119,7 @@ img{
     /* hotels для себя отделила */
  .site-navigation.active{
      color: #766257;
- }
+}
 
 .results-list {
     list-style: none;
@@ -157,34 +146,26 @@ img{
 }
  
 .btn{
-    text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
     background-color: #99cccc;
 }
-.btn:hover{
-    background-color: #99cccc;
-}
-
+.btn:hover,
 .btn:focus{
-    background-color: #6699cc;
+    background-color: #99cccc;
 }
 
 .btn:active{
     background-color: rgba(102, 153, 204, 0.3);
 }
 .btn-dark{
-    color: #ffffff;
     background-color:#766257;
 }
-.btn-dark:hover{
-    background-color: #766257;
-}
-
+.btn-dark:hover,
 .btn-dark:focus{
-    background-color: #604e44;
+    background-color: #766257;
 }
 
 .btn-dark:active{
@@ -192,7 +173,6 @@ img{
 }
 
 .rating-numbers{
-    text-decoration: none;
     color: #666666;
     line-height: 21px;
     background-color: #f2f2f2;
