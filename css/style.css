@@ -1,17 +1,27 @@
+html,
 body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 26px;
-    font-weight: 400;
-    color: #000000;
+    font-weight: bold;
+    color: #333333;
     text-transform: uppercase;
-    background-color: #d3d3d3;
+    background-color: #f2f2f2;
 }
 .container {
-    text-align: center;
+    position: relative;
+    width: 1200px;
+    
     background-color: #ffffff;
+    margin: 0 auto;
+    
 }
 a{
     text-decoration: none;
@@ -19,10 +29,15 @@ a{
 
 .welcome{
     background-image: url("../img/background-1.jpg");
-   
+    display: center;
+}
+.main-header{
+    background-color: #ffffff;
 }
 
+
 .page-title {
+    
     font-size: 21px;
     line-height: 26px;
    
@@ -31,20 +46,45 @@ a{
 
 
 .main-navigation {
+    width: 1056px;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    align-items: center;
     
 }  
-
-.site-navigation {
-    list-style: none;
-    background-color: #ffffff; 
+.logo{
+    position: absolute;
+    left: 50%;
+   
 }
 
-.site-navigation a{
-    color: #000000;
-    font-weight: bold;
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    list-style: none;
+    
+}
+.site-navigation li{
+    width: 200px;
+}
+
+
+.site-navigation li:nth-child(3){
+    letter-spacing: 0.2px;
+   }
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+    text-align: left;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+    text-align: right;
 }
 
 .site-navigation a:hover,
@@ -57,17 +97,43 @@ a{
     color:  #81b3d2; 
 }
 
+.results-item{
+    
+    justify-content: flex-start;
+}
 .reason-list {
     list-style: none;
 }
-
+.results-item-image{
+    width: 135px;
+    height: 90;
+    padding-left: 75px;
+    padding-right: 30px;
+    margin: 0;
+}
 .results-item-title{
+    display: flex;
+    text-transform: uppercase;
     color: #000000;
-    background-position: top left;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    margin: 0;
+    padding-right: 525px;
+   
+}
+.rating-numbers{
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #666666;
+    font-weight: 400;
+    padding: left;
+    width: 110px;
+    height: 26px;
 }
 
 img{
-    display: block;
+    
     max-width: 100%;
     height: auto;
 }
@@ -78,25 +144,79 @@ img{
      line-height: 36px;
 }
 .apointment-title  {
-    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
     color: #000000;
+}
+.apointment-title p{
+    margin-bottom: 47px;
+    font-size: 14px;
+    font-weight: normal;
     line-height: 24px;
+    text-align: center;
+    color: #333333;
 }
 .apointment-button {
-    color: rgba(102, 102, 102, 0,3);
-  
+    padding-top: 13px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+}
+
 }
 .form-btn {
     color: rgba(102, 102, 102, 0,3);
-  
-}   
+ 
+}
 
+.input-line-half .adult{
+    width: 250;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.input-line-half .children{
+    margin: 0;
+    padding: 0;
+    width: 250;
+    position: left;
+
+}
+.main-footer{
+    margin: 0 auto;
+    padding: 0 10px;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 39px;
+    padding-left: 15px;
+}
 .hashtag{
+
+    width: 136px;
+    margin: 0;
+    margin-left: 118px;
+    margin-right: 253px;
+    color: #000000;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    color: #000000;
-
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 224px;
+    padding: 0;
+    width: 154px;
+    text-align: center;
+    list-style: none;
 }
 
 .social-btn{
@@ -115,10 +235,39 @@ img{
 }
 .social-btn:active{
     background-color: rgba(102, 153, 204, 0.3); 
+
 }
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0;
+    color: #000000;
+    text-align: center;
+
+}
+.author a{
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000000;
+}
+
     /* hotels для себя отделила */
  .site-navigation.active{
      color: #766257;
+}
+.results-item{
+    display: flex;
+    width: 1056px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+    padding-right: 73px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .results-list {
