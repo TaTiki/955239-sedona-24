@@ -163,7 +163,7 @@ a {
     background: #81b3d2;
     color: white;
     position: relative;
-    height: 256px;
+    height: 253px;
 }
 .reason-title{
     margin: 3px auto 23px;
@@ -305,7 +305,12 @@ a {
     line-height: 21px;
 }
 .apointment{
+    position: relative;
     padding:  48px 51px 0;
+    top: 100%;
+}
+.apointment p{
+    margin-bottom: 42px;
 }
 
 
@@ -319,14 +324,14 @@ a {
     color: #000000;
     width: 550px;
 }
-.apointment p{
-    margin: 0 auto 47px;
+.apointment-button p{
+    margin: 15px auto 47px;
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
     text-align: center;
     color: #333333;
-    width: 534px;
+    width: 512px;
 }
 .apointment-button {
     padding: 30px 30px;
@@ -351,13 +356,14 @@ a {
 .apointment-button:active{
     background-color: rgba(80, 62, 50, 0.3)
 }
-.main-footer{
-    position: relative;
+.search-form .input-line{
+    margin-bottom: 1px:
 }
 .form-btn{
     padding: 16px 0;
     margin-bottom: 54px;
     width: 458px;
+    top: 100%;
     font-size: 21px;
     font-weight: bold;
     font-style: normal;
@@ -378,11 +384,18 @@ a {
     background-color: #5496bd;
     color: rgba(255, 255, 255,)
 }
+.main-footer{
+    position: relative;
+}
+
+
 .input-line{
     border: none;
-    margin: -6px;
-    margin-right: 47px;
-    padding: 1px;
+    color: #000000;
+    padding: 0;
+}
+.input-line .label{
+    border: none;
 }
 .icon-minus{
         position: absolute;
@@ -390,11 +403,20 @@ a {
 
 }
 .calendar{
-    left: 203px;
-    top: -38px;
+    left: -54px;
+    top: 7px;
    
     background-color: transparent;
     
+}
+.booking{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 18px;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
 }
 .booking-calendar-minus-plus button{
     width: 38px;
@@ -418,7 +440,9 @@ a {
     top: 0;
     left: 316px;
 }
-
+.map{
+    margin-left: -51px;
+}
 .main footer{
     position: relative;
     text-align: center;
@@ -468,9 +492,10 @@ a {
      left: 50%;
      margin-left: -285px;
      width: 568px;
+     height: 397px;
      transform: translateY();
      position: absolute;
-    padding-top: 55px;
+    padding-top: 43px;
     padding-left: 56px;
     font: inherit;
     font-size: 14px;
@@ -499,9 +524,9 @@ font-weight: bold;
 .search-form input{
         width: 355px;
         box-sizing: border-box;
-        padding: 9px 0;
-        padding-left: 23px;
-        margin-bottom: 4px;
+        padding: 0;
+        padding-left: 18px;
+        margin: 1px 12px 13px;
         max-height: 38px;
         font-size: 14px;
         line-height: 26px;
@@ -521,9 +546,9 @@ font-weight: bold;
 }
 .search-form .btn{
     padding: 0;
-    margin: 59px 0px 54px -49px;
+    margin: 54px 0px 0px -51px;
     width: 458px;
-    height: 60px;
+    height: 57px;
     font-size: 21px;
     font-weight: bold;
     font-style: normal;
@@ -537,11 +562,7 @@ font-weight: bold;
     border: none;
     cursor: pointer;
 }
-.map{
-    width: 100%;
-    height: 593px;
-    overflow: hidden;
-}
+
 
 .hashtag {
     width: 250px;
@@ -552,14 +573,21 @@ font-weight: bold;
     font-weight: 700;
     text-align: center;
 }
+a{
+color: #000000;
+text-decoration: none;
+}
 
     /* hotels для себя отделила */
  .filter {
     
     background-image: url("../img/filter-background.jpg");
     background-size: cover;
-    padding: 28px 70px 21px 72px;
+    padding: 28px 70px 22px 72px;
     background-color: #6699cc;
+}
+.site-navigation .active{
+    color: #716358;
 }
 .filter-category{
     display: flex;
@@ -692,7 +720,7 @@ background-position: 0 0;
 
 .range-controls {
     position: relative;
-    margin-bottom: -9px;
+    margin-bottom: -12px;
 
 }
 .range-controls .scale{
@@ -714,17 +742,22 @@ background-position: 0 0;
     box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
     cursor: pointer;
     position: absolute;
-    top: -9x;
-    
+    left: 20px;
+   
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 }
 .range-toggle:hover{
     background: #1c4f80;
 }
 .range-toggle-min{
-    left: 60.8%;
+    left: 64%;
 }
 .range-toggle-max{
-    left: 73.8%;
+    left: 73%;
 }
 .filter-form-btn{
     display: block;
@@ -750,6 +783,19 @@ background-position: 0 0;
     background-color: #fefefe;
     align-items: center;
     border-bottom: 0;
+}
+.sorting-list a:hover{
+    color: #81b3d2
+}
+.sorting-list a:active{
+    color: #000000;
+}
+.sorting-list .active {
+   color: #81b3d2
+
+}
+.sorting-list a{
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-title {
