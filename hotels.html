@@ -75,9 +75,9 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
+            <button class="range-toggle range-toggle-min" aria-label="Уменьшить цену"></button>
+            <button class="range-toggle range-toggle-max"  aria-label="Увеличить цену"></button>
             </div>
-            <button class="range-toggle range-toggle-min"></button>
-            <button class="range-toggle range-toggle-max"></button>
             <button class="filter-form-btn" type="submit">Показать</button>
           </fieldset>
         </form>
@@ -91,8 +91,10 @@
           <li><a href="#">По рейтингу</a></li>
         </ul>
         <div class="arrows">
-          <a class="arrow arrow-up" href="#"></a>
-          <a class=" arrow arrow-down active" href="#"></a>
+          <a class="arrow arrow-up" href="#">  <svg height="10" viewbox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11z" /></svg>
+          </a>
+          <a class=" arrow arrow-down active" href="#"><svg height="10" viewbox="0 0 11 10" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L0 0h11" /></svg>
+          </a>
         </div>
       </div>
       <section class="results">
@@ -108,7 +110,7 @@
               <a class="btn btn-dark" href="#">Забронировать</a>
             </div>
             <div class="results-item-rating">
-              <div class="hotel-star star-4">
+              <div class="hotel-star star-4"><span class="visually-hidden">4 звезды</span>
               </div>
               <p class="rating-numbers">Рейтинг: 8,5</p>
             </div>
@@ -123,7 +125,7 @@
               <a class="btn btn-dark" href="#">Забронировать</a>
             </div>
             <div class="results-item-rating">
-              <div class="hotel-star star-3">
+              <div class="hotel-star star-3"><span class="visually-hidden">3 звезды</span>
               </div>
               <p class="rating-numbers">Рейтинг: 8,9</p>
             </div>
@@ -138,7 +140,7 @@
               <a class="btn btn-dark" href="#">Забронировать</a>
             </div>
             <div class="results-item-rating">
-              <div class="hotel-star star-2">
+              <div class="hotel-star star-2"><span class="visually-hidden">2 звезды</span>
               </div>
               <p class="rating-numbers">Рейтинг: 9,2</p>
             </div>
@@ -147,9 +149,7 @@
       </section>
     </main>
     <footer class="inner-footer">
-      <p class="hashtag">
-        <a href="#">#visitsedona</a>
-      </p>
+        <p class="hashtag">#visitsedona</p>
       <div class="social">
         <a class="social-btn icon-twitter" href="#" aria-label="Зайти в наш Твиттер"></a>
         <a class="social-btn icon-facebook" href="#" aria-label="Посетить наш Фейсбук"></a>

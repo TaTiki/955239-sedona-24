@@ -42,7 +42,7 @@ a {
     text-align: center;
     background-color: #ffffff;
     margin: 0 auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
 }
 .main-header{
     position: relative;
@@ -660,12 +660,13 @@ text-decoration: none;
      margin-left: auto;
  }
  .filter-price-title{ 
-     width: 317px;
+    width: 317px;
     height: 35px;
     margin: 0 0 19px;
     border: 2px solid #ffffff;
     border-radius: 2px;
     position: relative;
+    padding-top: 2px;
 }
 .filter-price-title:after{
     content:"";
@@ -686,7 +687,7 @@ text-decoration: none;
     margin: 0px 2px 0 13px;
     padding: 0px 0px 0 34px;
 }
-.filter-form-group p label{
+.filter-form-group label{
     
     display: inline-block;
     font-size: 14px;
@@ -745,10 +746,11 @@ background-position: 0 0;
     background: #ffffff;
 }
 .range-toggle{
-    width: 2px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: #ababab;
-    border: 10px solid #ffffff;
+    border: 8px solid #ffffff;
+    top: -8px;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
     cursor: pointer;
@@ -765,10 +767,10 @@ background-position: 0 0;
     background: #1c4f80;
 }
 .range-toggle-min{
-    left: 64%;
+    left: 0;
 }
 .range-toggle-max{
-    left: 81%;
+    left: 78%;
 }
 .filter-form-btn{
     display: block;
@@ -800,6 +802,7 @@ background-position: 0 0;
 }
 .sorting-list a:active{
     color: #000000;
+    border: none;
 }
 .sorting-list .active {
    color: #81b3d2;
@@ -849,8 +852,28 @@ ul.sorting-list{
 }
  .arrows{
      margin-left: auto;
-
+     font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.3);
  }
+ .arrow svg {
+     fill: rgba(0, 0, 0, 0.3);
+    } 
+
+ .arrow:hover svg,
+ .arrow:focus svg {
+     fill: #81b3d2;
+ }
+ 
+ .arrow:active svg {
+     fill: #000000;
+    }
+ 
+ .arrow.active svg{
+     fill: #81b3d2;
+    }
 
 
 
@@ -938,7 +961,7 @@ h2.results-item-title{
     background-color: #81b3d2;
     margin: 14px 0 18px;
     vertical-align: top;
-    padding: 1px 17px;
+    padding: 4px 17px;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -1082,10 +1105,11 @@ h2.results-item-title{
     align-items: center;
     justify-content: center;
     width: 280px;
-    margin: 6px 9px 0 180px;
+    margin: 4px 9px 0 180px;
     color: #000000;
     text-align: center;
 }
 .author img{
-    margin: 0 6px;
+    margin-right: 6px;
+    margin-left: 8px;
 }
