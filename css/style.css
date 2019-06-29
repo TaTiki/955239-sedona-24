@@ -140,11 +140,11 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 23px 0 -9px;
+    margin: 23px 0 0;
 }
 .reason-info{
     width: 400px;
-    padding-top: 46px;
+    padding-top: 45px;
     text-align: center;
     background: #81b3d2;
     color: white;
@@ -165,7 +165,7 @@ a {
 }
 .reason-image {
     width: 800px;
-    height: 255px;
+    height: 256px;
     overflow: hidden;
 }
 .reason-info p{
@@ -187,10 +187,10 @@ a {
     padding: 0px;
     list-style: none;
     background-color: #ffffff;
-    padding: 55px 0 53px;
+    padding: 58px 0 48px;
 }
 .reason-sublist .reason-title{
-    margin: 3px 158px 8px;
+    margin: 3px 148px 8px;
     padding: 102px 0 11px 4px;;
     font-size: 21px;
     font-weight: 700;
@@ -200,13 +200,13 @@ a {
     background-repeat: no-repeat;
 }
 .reason-title-home{
-    background-image: url("../img/icon-1.svg");
+    background-image: url("../img/svg-sedona/icon-1.svg");
 }
 .reason-title-food{
-    background-image: url("../img/icon-2.svg");  
+    background-image: url("../img/svg-sedona/icon-3.svg");  
 }
 .reason-title-souvenir{
-    background-image: url("../img/icon-3.svg");
+    background-image: url("../img/svg-sedona/icon-2.svg");
 }
 .reason-sublist p{
     margin: 10px 50px;
@@ -223,12 +223,12 @@ a {
     padding-right: 525px; 
 }
 .reason-item-gray{
-    padding: 52px 0 43px;
+    padding: 44px 0 40px;
     background-color: #eeeeee;
 }
 .reason-item-gray p{
     margin: 0 50px;
-    padding: 0 10px 19px;
+    padding: 0 10px 22px;
     line-height: 21px;
 }
 .apointment{
@@ -396,7 +396,7 @@ a {
 .footer-wraper {
     display: flex;
     align-items: center;
-    padding: 36px 23px ;
+    padding: 35px 23px ;
     position: absolute;
     background-color: rgba(255, 255, 255, .9);
     text-align: center;
@@ -464,7 +464,7 @@ form.search-form{
     width: 568px;
     transform: translateY();
     position: absolute;
-    padding-top: 55px;
+    padding-top: 57px;
     padding-left: 56px;
     padding-right: 56px;
     padding-bottom: 54px;
@@ -515,7 +515,7 @@ input[type="text"] {
 .search-form .btn{
     padding: 0;
     margin: 0;
-    margin-top: 12px;
+    margin-top: 13px;
     width: 458px;
     height: 57px;
     font-size: 21px;
@@ -833,16 +833,11 @@ ul.sorting-list{
     margin: 0;
     padding: 0;
 }
-.results-item-image {
-    display: block;
-    margin-right: 30px;
-    margin-top: 4px;
-}
 .results-item{
     width: 100%;
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 17px;
+    padding-top: 14px;
+    padding-bottom: 15px;
     padding-left: 73px;
     padding-right: 73px;
     border-bottom: 1px solid #e5e5e5;
@@ -850,6 +845,7 @@ ul.sorting-list{
 .results-item-image{
     display: block;
     margin-right: 30px;
+    margin-top: 14px;
 }
 .results-item-content{
     display: flex;
@@ -859,7 +855,7 @@ ul.sorting-list{
 h2.results-item-title{
     width: 100%;
     text-align: left;
-    margin: 0px 0 6px;
+    margin: 8px 0 -3px;
     height: 27px;
 }
 .results-item-title a{
@@ -888,11 +884,12 @@ h2.results-item-title{
     width: 42%;
     text-align: left;
     margin: 0;
+    margin-top: 9px;
     height: 20px;
 }
 .btn{
     background-color: #81b3d2;
-    margin: 14px 0 18px;
+    margin: 16px 0 16px;
     vertical-align: top;
     padding: 4px 17px;
     color: #ffffff;
@@ -933,7 +930,7 @@ h2.results-item-title{
     margin-bottom: 46px;
     background-image: url("../img/star.svg");
     background-repeat: space;
-    margin-top: 3px;
+    margin-top: 14px;
 }
 .star-4 {
     width: 87px;
@@ -1026,7 +1023,7 @@ h2.results-item-title{
     align-items: center;
     justify-content: center;
     width: 280px;
-    margin: 4px 9px 0 180px;
+    margin: 5px 9px 0 180px;
     color: #000000;
     text-align: center;
 }
